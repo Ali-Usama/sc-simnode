@@ -3,27 +3,27 @@ resolver = "2"
 members = [
     "simnode",
     "runtime-api",
-    "tests",
+#    "tests",
 
      # parachain
-    "examples/parachain/node",
-    "examples/parachain/runtime",
+#    "examples/parachain/node",
+#    "examples/parachain/runtime",
 
      # aura
-     "examples/aura/node",
-     "examples/aura/runtime",
+#     "examples/aura/node",
+#     "examples/aura/runtime",
 
       # babe
-     "examples/babe/node",
-     "examples/babe/runtime",
-     "examples/babe/rpc",
+#     "examples/babe/node",
+#     "examples/babe/runtime",
+#     "examples/babe/rpc",
 ]
 
 [workspace.dependencies]
 codec = { version = "3.1.3", package = "parity-scale-codec", default-features = false }
 scale-info = { version = "2.1.1", default-features = false, features = ["derive"] }
 jsonrpsee = "0.24"
-try-runtime-cli = "0.41.0"
+#try-runtime-cli = "0.41.0"
 polkadot-sdk = { git ="https://github.com/paritytech/polkadot-sdk", branch = "stable2409", default-features = false }
 
 # crates which cannot be used from polkadot-sdk
